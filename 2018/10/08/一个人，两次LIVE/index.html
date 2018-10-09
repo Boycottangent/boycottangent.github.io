@@ -78,6 +78,8 @@
     <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >劇場街.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name"></a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>劇場街.</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg-1.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(http://ww1.sinaimg.cn/large/005tgvqXly1fw29yson3wj31kw11y7gq.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            劇場街.
-            <!-- 文章页  -->
+            [Untitled Post]
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,51 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                Refuse to express a passion and it dies
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "music">music</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "hitorie">hitorie</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">2.3k</span>阅读时长: <span class="post-count reading-time">7 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2018/10/08</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,163 +401,73 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2018/10/08/一个人，两次LIVE/" >
-            
-                <span>[Untitled Post]</span>
-        </a>
-        <div class="abstract-content">
-            几天前的10月4日，我到北京天桥艺术中心的疆进酒去听了一次LIVE。演出的是来自日本的摇滚乐队ヒトリエhitorie 这是乐队在中国的巡演 RED HOT POT TOUR 的第一站。我向来不喜欢出门，更不喜欢人多的场所，但是LIVE还是破天荒地去过两次，初体验是今年4月21日ヒトリエ在上海的海外首演，再来就是这一次。
-ヒトリエ在国内可以称作小众了，云村里最热的歌也不过几千评论，在其他平台就更冷清了。就我个人而言，身边没有ヒトリエ的同好，甚至连听过他们音乐的人都很少。所以两次LIVE我都是一个人自己去的，没有太多顾忌，很放松，但是心情也略有点复杂。记得421在上海的时候，我看着身边的其他...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "music">music</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hitorie">hitorie</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>几天前的10月4日，我到北京天桥艺术中心的疆进酒去听了一次LIVE。演出的是来自日本的摇滚乐队ヒトリエ<code>hitorie</code> 这是乐队在中国的巡演 <em>RED HOT POT TOUR</em> 的第一站。我向来不喜欢出门，更不喜欢人多的场所，但是LIVE还是破天荒地去过两次，初体验是今年4月21日ヒトリエ在上海的海外首演，再来就是这一次。</p>
+<p>ヒトリエ在国内可以称作小众了，云村里最热的歌也不过几千评论，在其他平台就更冷清了。就我个人而言，身边没有ヒトリエ的同好，甚至连听过他们音乐的人都很少。所以两次LIVE我都是一个人自己去的，没有太多顾忌，很放松，<strong>但是心情也略有点复杂</strong>。记得421在上海的时候，我看着身边的其他粉丝三两结伴，聊得很欢，也只好自我安慰道：一人え的LIVE，一个人来看才对嘛…</p>
+<h1 id="静默厨"><a href="#静默厨" class="headerlink" title="静默厨"></a>静默厨</h1><p>4月21日在上海的那场LIVE，我的入场券号是14.</p>
+<p>得知乐队要来中国演出的时候，我立马就做出了“无论如何，也要参加这场LIVE”的决定。所以在焦头烂额的大二下学期，我赶着仅有两天的周末时间，周六早上仓促地从北京前往上海，然后在LIVE结束后的第二天又回到北京——这在我过去的生活真是不可想象，对于那个认为“国庆长假去一趟日本不太从容”而打消一次行程的我来说，能这样行动起来是怀了怎么样热切的情感呢？</p>
+<p><img src="http://ww1.sinaimg.cn/large/005tgvqXly1fw1rinenbij30u00k0goh.jpg" alt="LIVE in Shanghai"></p>
+<p>后来我知道，并不存在什么热切的情感，不是那样暧昧的东西——而是更加含蓄、清晰的</p>
+<p>关于那场的LIVE的记忆，拜写日记的习惯所赐还很清晰，我最大的感受就是一种<strong>安定感</strong>。当ヒトリエ的member登台的时候，尽管情绪不自觉被耳边的欢呼和尖叫推动着，我只是安静地鼓掌；<em>Unhappy Refrain</em> 作为开场响起的时候，尽管觉得像做梦一样没有实感，但我也只是鼓着掌；最爱的 <em>(W)HERE</em> 那无比熟悉的前奏没有征兆地出现的时候，除了用更大的力度来鼓掌，我也没有什么过激的反应；甚至最后让所有人意外地二次安可，<em>カラノワレモノ</em>这首哀伤到极致的曲子，我也是笑着听完的……</p>
+<p>那场LIVE很棒，能遇上一场所有曲目都喜欢到能唱出来的LIVE，人生真的就算就此结束了也不会有太大遗憾吧。但是当时的我除了纯粹地觉得很满足之外并没有太多深刻的感受。我记得现场的气氛一直很high，每一次音乐响起时都能听到观众尖叫，但我却好像觉得这一切就该如此一样地，自始至终都很安定——ヒトリエ来中国了，我就去看他们的演出，然后在现场听到那些我已经循环了上百遍的曲子，丝毫不感到意外，买到了VIP的票，就和他们握手，说一声“どうもありがとう”，拿一张签名的明信片。然后LIVE结束后他们回到日本，我继续在耳机里听那些很棒的歌曲……</p>
+<p>喜欢也好，爱也好，这种东西不需要存在感。只是那么想着，然后就去做了，去为了报答从别人感受到的情感而行动起来。我认为喜欢的态度就要像一杯水，盛满的时候是没有波澜的，只是静默地放在那里，厚重沉稳的样子，别人也不敢轻易触碰。</p>
+<h1 id="自闭与同好"><a href="#自闭与同好" class="headerlink" title="自闭与同好"></a>自闭与同好</h1><p>10月4日在北京的这场LIVE，我的入场券号是5.</p>
+<p>对我来说这其实是一个比较尴尬的号码，因为它太靠前了，有点太显眼了。个位数号码的观众互相之间几乎都是weibo上的熟人，或者早就在<strong>同好群</strong>里相互熟络了——喜欢小众事物的人都很难避免地希望能够得到认同。同好群这个非官方的粉丝组织吸纳了大部分喜欢ヒトリエ的人（当然，不包括我）LIVE在某种意义上也是一次大型的粉丝面基活动，入场前现场的气氛已经很活跃了。在排队的时候，为了不打扰我身前的4号和身后的6号之间的友好交谈，我只能尽量斜着身子。这个过程是微妙而痛苦的——只是听着陌生人的谈话总归不太合适，所以我一直尝试着把自己抽离出去，寻找着转移自己注意的方法，但是一旦耳朵不小心捕捉到一两句话我又会忍不住听下去，漫长的候场时间里我不断在注意和不注意的状态下切换，在这种充满尴尬的气氛里总算迎来了演出的开始。</p>
+<p>开场曲是 <em>イヴステッパー</em> ，感染力很强，一下子就把现场的tension拉起来了。这也是我很喜欢的一首曲子，所以我也有节奏地拍起手。就在这时我体会到了5号位给我带来的另一个尴尬：我站在第一排正中的位置，正对舞台。本来不打Call、不尖叫、不蹦迪的我在这种气氛高涨的LIVE里就显得格格不入，而在这个位置上，我更是与两侧和身后那些已经接近失去理智的观众形成了鲜明对比。</p>
+<p>自己的行为会不会显得有点ky？这么想着我才意识到自己的转变，以前我并不会对此有所顾虑，行为的恰当性是相对于背景而言的，而过去我总是要把环境和自己硬生地隔离开来，从来不会认可环境对自己行为试图产生的那些影响。我总是站在自己行为的角度来思考，我做的事是我喜欢的吗？我做的事影响到他人了吗？而现在我居然开始思考别人的想法，考虑别人会如何看待我做的事。</p>
+<p>承认自己受到了他人的影响，承认自己失去了和环境隔离开的独立性，还是或多或少觉得有点挫败，但眼下的情境真的需要把自己和环境看得如此泾渭分明吗？歌手们是怀抱着什么样的想法让有着同一份爱的人聚到一起？来到这里的人又是怀抱着什么样想法走进这个拥挤的LIVE HOUSE？</p>
+<blockquote>
+<p>从头到尾，周围都是陌生的面孔，但是我却能感到另一种前所未有的自在，那种终于能够释放被压抑的情绪，大声唱出声来。在会场里的每一个人，在一种程度上其实是同一个人，音乐的魅力不过于此吧，即便没有和任何人交流，但是那种串联起所有人的相同感受比任何语言都要来的有力——摘自杯葛的日记，2018，4.21</p>
+</blockquote>
+<p>安可的时候，从我右边递来了粉丝制作的大幅Banner，似乎是希望第一排的观众能够举起来，在member回到舞台的时候能看到。我接了过来，然后也递给了左手的那位。写满各种名字和寄语的Banner就这样在前排被拉起来，并随着台下情绪饱满的“もう一回”的安可声越举越高。member重回舞台的时候自然看到了，看上去很惊喜地着从我们手中接过那幅Banner，摆在舞台上，台下一片尖叫。我也感到很开心，同时也有点后悔入场前没有去Banner上留言，只是站在那里看着。</p>
+<p><img src="http://ww1.sinaimg.cn/large/005tgvqXly1fw28w2pj5uj31kw11y7j7.jpg" alt="乐队成员身披的就是Banner"></p>
+<p>LIVE很棒，没吃晚饭的我在结束的时候大汗淋漓，两臂发酸，但是情绪依旧很强烈。结束散场的时候，我从LIVE HOUSE里走出来，碰上了之前排队时的4号。她似乎看到了我别在肩包上的乐队挂件——那是之前在weibo上联系一位同好购买的自制周边——很兴奋地指着那个对我说：<br>“这个，是我做的哦！”<br>“知道。”我点了点头，“刚才排队的时候听到你们的聊天了。”</p>
+<p>人生的第二次LIVE，也是我第一次尝试着像别人一样去做出打Call的动作。只是下次的LIVE，我有点不想一个人去了。大抵喜欢小众事物的人都很难避免地希望能够得到认同，我当然也不例外。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>4月份参加完上海的第一次LIVE后，我就有很强烈写点什么来抒发一下的冲动，当时劇場街还没搭建起来，只好把想法都放在自己的日记里。北京的这场LIVE对我也是意义不凡，但是各种想法交织迟迟没法下笔。</p>
+<p>如果你也喜欢ヒトリエ的话，下次一起去听LIVE吧～</p>
+
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2018/09/25/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://boycottangent.github.io">boycottangent</a>
+            <p>原文链接：<a href="https://boycottangent.github.io/2018/10/08/一个人，两次LIVE/">https://boycottangent.github.io/2018/10/08/一个人，两次LIVE/</a>
+            <p>发表日期：<a href="https://boycottangent.github.io/2018/10/08/一个人，两次LIVE/">October 8th 2018, 5:53:00 pm</a>
+            <p>更新日期：<a href="https://boycottangent.github.io/2018/10/08/一个人，两次LIVE/">October 9th 2018, 9:16:26 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/25</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/profile.jpg >
-    <div class="profile-name">Boy'Cot</div>
-    
-    <div class="profile-signature">
-        boycottangent
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:boycottangent@gmail.com" class="iconfont-archer email" title=email ></a>
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/09/25/hello-world/" title= "Hello World">
+                    <div class="prevTitle">Hello World</div>
+                </a>
             
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
     
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-            
-                <a href="https://weibo.com/u/5013111987" class="iconfont-archer weibo" target="_blank" title=weibo></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="https://twitter.com/boycottangent" class="iconfont-archer twitter" target="_blank" title=twitter></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
-            
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -591,6 +551,24 @@ More...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#静默厨"><span class="toc-number">1.</span> <span class="toc-text">静默厨</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自闭与同好"><span class="toc-number">2.</span> <span class="toc-text">自闭与同好</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写在最后"><span class="toc-number">3.</span> <span class="toc-text">写在最后</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -731,6 +709,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
