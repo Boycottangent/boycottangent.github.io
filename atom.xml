@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://boycottangent.github.io/"/>
-  <updated>2018-11-12T07:45:33.878Z</updated>
+  <updated>2018-10-30T02:25:40.366Z</updated>
   <id>https://boycottangent.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://boycottangent.github.io/2018/11/12/test/"/>
-    <id>https://boycottangent.github.io/2018/11/12/test/</id>
-    <published>2018-11-12T06:58:18.000Z</published>
-    <updated>2018-11-12T07:45:33.878Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-Default-Set"><a href="#Hexo-Default-Set" class="headerlink" title="Hexo Default Set"></a>Hexo Default Set</h1><h2 id="MWeb-绝对路径"><a href="#MWeb-绝对路径" class="headerlink" title="MWeb 绝对路径"></a>MWeb 绝对路径</h2><p><img src="/images/0e03156234f63a5b02943b744a9f7301-2.jpg" alt="0e03156234f63a5b02943b744a9f7301"></p><ul><li>Typora不兼容</li><li>Yu Writer不兼容</li></ul><h2 id="Yu-Writer-插入方式"><a href="#Yu-Writer-插入方式" class="headerlink" title="Yu Writer 插入方式"></a>Yu Writer 插入方式</h2><p><img src="images/0e03156234f63a5b02943b744a9f7301-2.jpg" alt="0e03156234f63a5b02943b744a9f7301-2"></p><ul><li>Typora不兼容</li><li>MWeb兼容</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo-Default-Set&quot;&gt;&lt;a href=&quot;#Hexo-Default-Set&quot; class=&quot;headerlink&quot; title=&quot;Hexo Default Set&quot;&gt;&lt;/a&gt;Hexo Default Set&lt;/h1&gt;&lt;h2 id=&quot;MWeb-绝对路径
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>人狼与魔剧院</title>
@@ -84,27 +63,6 @@
       <category term="music" scheme="https://boycottangent.github.io/tags/music/"/>
     
       <category term="hitorie" scheme="https://boycottangent.github.io/tags/hitorie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://boycottangent.github.io/2018/09/25/hello-world/"/>
-    <id>https://boycottangent.github.io/2018/09/25/hello-world/</id>
-    <published>2018-09-25T14:23:59.839Z</published>
-    <updated>2018-10-08T09:59:02.386Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
