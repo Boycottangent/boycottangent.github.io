@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://boycottangent.github.io/"/>
-  <updated>2018-10-30T02:25:40.366Z</updated>
+  <updated>2018-11-12T07:45:33.878Z</updated>
   <id>https://boycottangent.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://boycottangent.github.io/2018/11/12/test/"/>
+    <id>https://boycottangent.github.io/2018/11/12/test/</id>
+    <published>2018-11-12T06:58:18.000Z</published>
+    <updated>2018-11-12T07:45:33.878Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Default-Set"><a href="#Hexo-Default-Set" class="headerlink" title="Hexo Default Set"></a>Hexo Default Set</h1><h2 id="MWeb-绝对路径"><a href="#MWeb-绝对路径" class="headerlink" title="MWeb 绝对路径"></a>MWeb 绝对路径</h2><p><img src="/images/0e03156234f63a5b02943b744a9f7301-2.jpg" alt="0e03156234f63a5b02943b744a9f7301"></p><ul><li>Typora不兼容</li><li>Yu Writer不兼容</li></ul><h2 id="Yu-Writer-插入方式"><a href="#Yu-Writer-插入方式" class="headerlink" title="Yu Writer 插入方式"></a>Yu Writer 插入方式</h2><p><img src="images/0e03156234f63a5b02943b744a9f7301-2.jpg" alt="0e03156234f63a5b02943b744a9f7301-2"></p><ul><li>Typora不兼容</li><li>MWeb兼容</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-Default-Set&quot;&gt;&lt;a href=&quot;#Hexo-Default-Set&quot; class=&quot;headerlink&quot; title=&quot;Hexo Default Set&quot;&gt;&lt;/a&gt;Hexo Default Set&lt;/h1&gt;&lt;h2 id=&quot;MWeb-绝对路径
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>人狼与魔剧院</title>
