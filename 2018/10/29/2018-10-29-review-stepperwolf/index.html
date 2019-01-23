@@ -464,7 +464,7 @@ height:50vh;
             <p>原文作者：<a href="https://boycottangent.github.io">boycottangent</a>
             <p>原文链接：<a href="https://boycottangent.github.io/2018/10/29/2018-10-29-review-stepperwolf/">https://boycottangent.github.io/2018/10/29/2018-10-29-review-stepperwolf/</a>
             <p>发表日期：<a href="https://boycottangent.github.io/2018/10/29/2018-10-29-review-stepperwolf/">October 29th 2018, 10:48:00 pm</a>
-            <p>更新日期：<a href="https://boycottangent.github.io/2018/10/29/2018-10-29-review-stepperwolf/">October 30th 2018, 10:25:40 am</a>
+            <p>更新日期：<a href="https://boycottangent.github.io/2018/10/29/2018-10-29-review-stepperwolf/">January 23rd 2019, 5:37:07 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -490,21 +490,6 @@ height:50vh;
     <!-- 评论插件 -->
     <!-- 来必力City版安装代码 -->
 
-    <div id="lv-container" data-id="city" data-uid= MTAyMC80MDc0NC8xNzI3MA==>
-        <script type="text/javascript">
-            (function (d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') { return; }
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-        </script>
-        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
-
 <!-- City版安装代码已完成 -->
     
     
@@ -514,6 +499,22 @@ height:50vh;
 
     
     
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="comment"></div>
+    <script>
+    new Valine({
+        el: '#comment' ,
+        notify:false, 
+        verify:false, 
+        appId: "oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz",
+        appKey: "Exa5iYKpwXX635QRm0TKmYfw",
+        placeholder: "你有没有什么想说的？",
+        path:window.location.pathname, 
+        avatar:'mm' 
+    });
+    </script>
+
 
     <!-- 评论 -->
 </main>
