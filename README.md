@@ -16,7 +16,7 @@
 
 博客特点
 * 支持Aplayer
-* 支持评论，目前采用LiveRe
+* 支持评论，目前采用valine
 * 支持内容搜索，见sidebar
 * 日期归档，标签云
 
@@ -26,12 +26,11 @@
 - [x] 自定义域名，其实现在已经做了`https://boycottangent.xyz`，但是可能会在未来取消
 - [ ] favicon...
 - [ ] 用访问速度更快速的方法替换unspalsh随机首页头图
-- [ ] Twitter Tag & Instagram tag
+- [x] Twitter Tag & Instagram tag
 
 以下还不确定
 * 考虑更换theme，毕竟archer的主题渲染不够快
-* 评论系统用valine替换LiveRe，免去登录操作
 * 接入`hexo-douban`插件
 * ...
 
-如果有任何意见或看法欢迎提起issue，同时，由于我并不是计算机相关从业者，请不要嫌我菜:laugh:
+如果有任何意见或看法欢迎提起issue，同时，由于我并不是计算机相关从业者，请不要嫌我菜
