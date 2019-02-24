@@ -12,7 +12,7 @@
 * notion：一些主观的，胡思乱想的内容
 * event：由生活事件里有感而发的内容
 * review：各类评论类文章，乐评书评等
-* 可能会拓展
+* forward：转载自其他来源的文章
 
 博客特点
 * 支持Aplayer
@@ -27,10 +27,11 @@
 - [ ] favicon...
 - [ ] 用访问速度更快速的方法替换unspalsh随机首页头图
 - [x] Twitter Tag & Instagram tag
+- [x] 接入`hexo-douban`插件
 
 以下还不确定
 * 考虑更换theme，毕竟archer的主题渲染不够快
-* 接入`hexo-douban`插件
+* ~~接入`hexo-douban`插件~~ 
 * ...
 
 如果有任何意见或看法欢迎提起issue，同时，由于我并不是计算机相关从业者，请不要嫌我菜
