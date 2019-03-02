@@ -8,7 +8,7 @@
 
 ## 内容
 
-文章主要有三类，见category
+文章主要有四类，见category
 * wonder：一些主观的，胡思乱想的内容
 * event：由生活事件里有感而发的内容
 * review：各类评论类文章，乐评书评等
@@ -27,7 +27,6 @@
 - [ ] favicon...
 - [ ] 用访问速度更快速的方法替换unspalsh随机首页头图
 - [x] Twitter Tag & Instagram tag
-- [x] 接入`hexo-douban`插件
 
 以下还不确定
 * 考虑更换theme，毕竟archer的主题渲染不够快
