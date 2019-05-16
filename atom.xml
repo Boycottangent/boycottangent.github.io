@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>劇場街</title>
+  <title>Bot&#39;log</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -119,17 +119,17 @@
   </entry>
   
   <entry>
-    <title>关于劇場街</title>
+    <title>Why Bot&#39;log</title>
     <link href="https://boycottangent.github.io/2018/11/27/pintotop/"/>
     <id>https://boycottangent.github.io/2018/11/27/pintotop/</id>
     <published>2018-11-27T03:30:09.000Z</published>
-    <updated>2019-04-25T02:52:48.548Z</updated>
+    <updated>2019-05-16T16:07:27.136Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2018年9月21日的这一天，<strong>劇場街</strong>诞生了。对于杯葛来说，这是一次前所未有的尝试。伴随着劇場街的诞生，我开始尝试一种更加开放的态度来面对自我和他人。<a id="more"></a><br><img src="/images/Screen%20Shot%202018-11-27%20at%2015.18.57-1.png" alt="劇場街"><br>劇場街是什么？形式上它是我的个人博客，依赖于Hexo这个平台，网站的内容托管在<a href="https://github.com/Boycottangent/boycottangent.github.io" target="_blank" rel="noopener">GitHub</a>上（如果你有什么看法也可以直接在GitHub上提交issue）选取<code>Hexo + Github</code>的形式，而不采用诸如微信公众号、Lofter等国内的平台主要有两方面的考虑，第一是希望能够最大程度地减少我在创作时受到的内容上的限制，第二是因为这样的形式给予了我全方位定制博客系统的自由，从界面到功能。当然，因为能力不足我暂时没有自己写一个博客主题的打算，我从众多Hexo-theme里挑选了一个最让我满意的主题。就目前你所见到的整个网站的样式采用的是<a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="noopener">archer主题</a>，在主页呈现文章列表和profile信息，把归档页面、分类和标签隐藏在页面左边的抽屉里。</p><p>Blog的名字<strong>劇場街</strong>，源于我很喜欢的日本摇滚乐队ヒトリエ的一首同名歌曲。这个名字能够概括我希望在Blog里写下的内容——<strong>我对于自我和外部生活各个方面的思考</strong>。劇場街可以指个体外部的生活，如果把个人的生活比作一出戏剧，他和他的周遭所构成的那些生活的集合，构成了充斥着各种荒诞表演的劇場街。劇場街也可以比喻是个体内部的自我，如果把个人的一种意识比作一出戏剧，他大脑中所具备的种种思想的集合，构成了不断上演着令人惊叹的剧目的劇場街。就好像<em>Walt Whitman</em>的诗所写的那样：</p><blockquote><p><em>of the endless trains of the faithless, of cities filled with the foolish. what good amid these,O me, O life? Answer.That you are here — that life exists, and identity, that the powerful play goes on and you may contribute a verse.</em></p><blockquote><p>毫无信仰的人群川流不息，这个城市充斥着愚昧。生活在其中有什么意义，啊！自我！啊！生命！答案，因为你的存在，生活因此存在，使其合一，伟大的戏剧继续上演，而你依旧可以奉上一首诗篇。</p></blockquote></blockquote><p>因此，可以说劇場街里的内容总是相当主观的，我所期望的就是用一种主观阐发另一种主观，期望我对于某个事物、某种现象的思考能引发观众的思考——劇場街里遍布这样的事物：这些事物通过经验之间的唤起，在人与人之间构建起联系。当你听一首歌，看一本书，或者观赏一部电影，这些他人经验的化身并不会让你无动于衷。因为当你通过这些看似无关的事物映照自己的内心，你看到了共鸣，看到的分明是自己的身影被替换到了那些场景中，你甚至感受到了一种宏大的联结感。我认为人类这种特质真是太伟大了——总是贪得无厌地寻找共性，这就是人的坚强之处。</p><p>对于劇場街里的种种，如果观众能在那些剧目中看到自我，拾起那些可能被遗忘了很久的，细微而珍贵的自我经验，就已经足够值回票价了。</p><p>同时，我在搭建这个博客不久后就加入了评论系统，采用的是在国内网络环境下适应性较高的LiveRe系统，评论需要登录，但是总体来说还是行动成本还是比较低的（其实有行动成本更低的无需注册直接评论的方案，可能会在未来替换掉吧）尽管我并不是一个习惯于留下评论的人，但是劇場街是保持开放的，它不限制任何一种声音，我期待着每一个主观意见。交流和共享，某种意义上也是我建立这个博客的原因之一。</p><p>那么如果不介意的看到一个还不算太无趣的自我的话，就请来劇場街吧。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2018年9月21日的这一天，<strong>我认为自己想写博客了</strong>。对于杯葛来说，这大概是前所未有的。伴随着这样的想法，我开始尝试一种更加开放的态度来面对自我，和他人。<a id="more"></a>我几乎是在一天内打理好了一切很快就上线了自己的静态网站博客，取名为<code>Bot&#39;log</code>，纯粹因为它是杯葛的博客（Boycott’s blog）我暂时还不想赋予它什么更有深意的名字。</p><p><img src="/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-05-17%2000.00.18.png" alt="Bot&#39;log"><br>今天，博客（blog）还像过去那样流行吗？答案似乎是否定的，<strong>表达变得越来越简单，观点也愈发廉价</strong>。媒体掌握了那些可公开讨论的确定信息，自媒体还在什么领域掌握话语权？答案显而易见是那些更加私人化的主观论题。所以形式上的博客逐渐消失，但是它背后的精神理念被类似Twitter，微博甚至是微信这一类社交媒体所继承——当然是批判性的继承，为了让更多人参与到其中，这些“新时代的博客”不再妄图去输出可探讨的个人经验，而转化为短命题式的价值判断，写出140个字始终是要比写出1400个字要简单得多。很快，人们比过去的任何一个时代都要精力旺盛地产生各种毫无意义的语言垃圾（一周发出的微博字数甚至超过了一个周更博客的文章篇幅）；很快，140个字也成了个体信息加工的容量上限；很快，人们发现用论断煽动大众能赚很多钱，而尝试和人进行形而上的讨论只会给对方带来痛苦……很快，一些人不在互联网上说话了，因为他们发现自己和身边其他人已经不能用语言来互相取悦对方了。</p><p>可悲的是，人所具有的天性和如同诅咒一般的语言禀赋使其始终有一种不可抑制的欲望，那就是以文字和语言来表征自己的所见所闻，所思所想。这些不愿说话的人终有一天也要开口，即便他们的声音可能被无情的浪潮淹没，即便如此他们也觉得有一种要把自我对于这个世界的全部思考、观念和实践表达出来的义务。他们是说给自己听，也是在心里奢望着这些话语能够触动某些人。就好像<em>Walt Whitman</em>的诗所写的那样：</p><blockquote><p><em>of the endless trains of the faithless,<br>of cities filled with the foolish.<br>what good amid these,O me, O life?<br>Answer.That you are here —<br>that life exists, and identity,<br>that the powerful play goes on<br>and you may contribute a verse.</em></p></blockquote><p>“毫无信仰的人群川流不息，这个城市充斥着愚昧。生活在其中有什么意义，啊！自我！啊！生命！原来因为你的存在，生活因此存在，使其合一。伟大的戏剧继续上演，而你依旧可以奉上一首诗篇。”</p><p>这正是那些人最彻底的诗意，但也是他们最大的悲剧。因为最终，他们在某种程度上变成了自己一直以来最为深恶痛绝的一类人，那些只能自说自话的人。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;2018年9月21日的这一天，&lt;strong&gt;劇場街&lt;/strong&gt;诞生了。对于杯葛来说，这是一次前所未有的尝试。伴随着劇場街的诞生，我开始尝试一种更加开放的态度来面对自我和他人。&lt;/p&gt;
+      &lt;p&gt;2018年9月21日的这一天，&lt;strong&gt;我认为自己想写博客了&lt;/strong&gt;。对于杯葛来说，这大概是前所未有的。伴随着这样的想法，我开始尝试一种更加开放的态度来面对自我，和他人。&lt;/p&gt;
     
     </summary>
     
