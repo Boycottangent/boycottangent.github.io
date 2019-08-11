@@ -21,6 +21,8 @@
 <meta name="twitter:title" content="羅列の単音、破砕の言葉">
 <meta name="twitter:description" content="专辑的假名，写成英文就是imaginary mono-fiction，可以理解为“关于一个人的虚构的故事”。wowaka尝试用自己偏向小众、晦涩和意识流的词曲风格在一张专辑里完成一个叙事结构。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Boycottangent/GitPic/master/UNADJUSTEDNONRAW_thumb_2c3.jpg">
+<meta name="twitter:creator" content="@杯葛">
+<meta name="twitter:site" content="Bot'log">
 
 
 
@@ -300,18 +302,19 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: false,
-        app_id: 'oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz',
-        app_key: 'Exa5iYKpwXX635QRm0TKmYfw',
-        placeholder: '你有没有什么想说的？'
-    });
+    var gitalk = new Gitalk({
+        clientID: '448988613abf9db0fe3e',
+        clientSecret: 'b0b15a3137521b2bc75a4ccc5865e05bb9b8a0bd',
+        id: 'fc714f5c9ca9177f8ffbc848fce4cd93',
+        repo: 'Gitalk',
+        owner: 'Boycottangent',
+        admin: ["Boycottangent"]
+    })
+    gitalk.render('comment-container')
 </script>
 
     </div>

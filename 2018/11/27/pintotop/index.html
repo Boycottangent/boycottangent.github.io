@@ -20,6 +20,8 @@
 <meta name="twitter:title" content="Why Bot&#39;log">
 <meta name="twitter:description" content="2018年9月21日的这一天，我认为自己想写博客了。对于杯葛来说，这大概是前所未有的。伴随着这样的想法，我开始尝试一种更加开放的态度来面对自我，和他人。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Boycottangent/GitPic/master/005MQeNlly1g23ln1ww4pj31hc0u0gwb.jpg">
+<meta name="twitter:creator" content="@杯葛">
+<meta name="twitter:site" content="Bot'log">
 
 
 
@@ -224,18 +226,19 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: false,
-        app_id: 'oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz',
-        app_key: 'Exa5iYKpwXX635QRm0TKmYfw',
-        placeholder: '你有没有什么想说的？'
-    });
+    var gitalk = new Gitalk({
+        clientID: '448988613abf9db0fe3e',
+        clientSecret: 'b0b15a3137521b2bc75a4ccc5865e05bb9b8a0bd',
+        id: 'd8b3940d6150db1a42e0d40829b693ab',
+        repo: 'Gitalk',
+        owner: 'Boycottangent',
+        admin: ["Boycottangent"]
+    })
+    gitalk.render('comment-container')
 </script>
 
     </div>

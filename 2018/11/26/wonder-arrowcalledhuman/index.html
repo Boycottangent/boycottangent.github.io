@@ -21,6 +21,8 @@
 <meta name="twitter:title" content="神箭必然有所命中">
 <meta name="twitter:description" content="我记得有一天晚上，不知道出于什么原因，我一直睡不着。越是希望睡着，思维却越是奔越，在我的头脑里，各种与自我相关的元素交织在一起，像电影片段一般闪过。最终我放弃了让自己睡着的尝试，索性开始观摩内心的想法。">
 <meta name="twitter:image" content="https://boycottangent.github.io/images/og_image.png">
+<meta name="twitter:creator" content="@杯葛">
+<meta name="twitter:site" content="Bot'log">
 
 
 
@@ -239,18 +241,19 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: false,
-        app_id: 'oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz',
-        app_key: 'Exa5iYKpwXX635QRm0TKmYfw',
-        placeholder: '你有没有什么想说的？'
-    });
+    var gitalk = new Gitalk({
+        clientID: '448988613abf9db0fe3e',
+        clientSecret: 'b0b15a3137521b2bc75a4ccc5865e05bb9b8a0bd',
+        id: 'db2d205d8a695a93112ec700c0ee13d9',
+        repo: 'Gitalk',
+        owner: 'Boycottangent',
+        admin: ["Boycottangent"]
+    })
+    gitalk.render('comment-container')
 </script>
 
     </div>

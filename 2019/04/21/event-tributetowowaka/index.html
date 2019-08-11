@@ -21,6 +21,8 @@
 <meta name="twitter:title" content="Live in 2018, Left in 2019">
 <meta name="twitter:description" content="今天是4月21日，因为是星期天，我起得比较晚。我还记得去年的这个时候，也就是2018年的4月21日，是周六，而且我起得相当早，为了赶着动车从北京去到上海。只是因为想去看一场那天晚上在万代南梦宫文化中心举办的live">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Boycottangent/GitPic/master/telegram-cloud-file-1-806123973-288820--2217486564096874819.jpg">
+<meta name="twitter:creator" content="@杯葛">
+<meta name="twitter:site" content="Bot'log">
 
 
 
@@ -257,18 +259,19 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: false,
-        app_id: 'oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz',
-        app_key: 'Exa5iYKpwXX635QRm0TKmYfw',
-        placeholder: '你有没有什么想说的？'
-    });
+    var gitalk = new Gitalk({
+        clientID: '448988613abf9db0fe3e',
+        clientSecret: 'b0b15a3137521b2bc75a4ccc5865e05bb9b8a0bd',
+        id: '5714b55aeb5cfb163e2f06d84104b29d',
+        repo: 'Gitalk',
+        owner: 'Boycottangent',
+        admin: ["Boycottangent"]
+    })
+    gitalk.render('comment-container')
 </script>
 
     </div>

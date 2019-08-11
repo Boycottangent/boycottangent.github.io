@@ -21,6 +21,8 @@
 <meta name="twitter:title" content="我的宗教观之流变">
 <meta name="twitter:description" content="在个人的成长经历方面，我自认与大多同龄人相当不同的一点就是：从小到大，由宗教所带来的心理冲突是相当鲜明而不可忽视的。我的母亲是一个基督徒，而我的父亲是一个传统的中国人，是一个党员。而我，则是两种宗教体系的混血儿。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Boycottangent/GitPic/master/UNADJUSTEDNONRAW_thumb_67.jpg">
+<meta name="twitter:creator" content="@杯葛">
+<meta name="twitter:site" content="Bot'log">
 
 
 
@@ -235,18 +237,19 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: true,
-        verify: false,
-        app_id: 'oAuXBmOBlchfnUXPYhxEHP46-gzGzoHsz',
-        app_key: 'Exa5iYKpwXX635QRm0TKmYfw',
-        placeholder: '你有没有什么想说的？'
-    });
+    var gitalk = new Gitalk({
+        clientID: '448988613abf9db0fe3e',
+        clientSecret: 'b0b15a3137521b2bc75a4ccc5865e05bb9b8a0bd',
+        id: 'd2f4ef8831cc7bb765a5f8703cdc8aea',
+        repo: 'Gitalk',
+        owner: 'Boycottangent',
+        admin: ["Boycottangent"]
+    })
+    gitalk.render('comment-container')
 </script>
 
     </div>
