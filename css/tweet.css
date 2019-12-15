@@ -3,20 +3,23 @@
 }
 
 .bd-tw {
-    background-color: #fafafa;
+    background-color: white;
+    border:1px solid #f5f5f5;
     border-radius: 6px;
     color: #697882;
     flex-shrink: 0;
-    font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 16px;
+/*     font-family: Helvetica, Roboto, "Segoe UI", Calibri, sans-serif; */
+    font-size: 15px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    max-width:500px;
 }
 
-.bd-tw.bd-is-gray {
-    background-color: rgba(247, 247, 247)
+.bd-tw.bd-is-white {
+/*     background-color: rgba(247, 247, 247) */
+    background-color: white
 }
 
 .bd-tw-header {
@@ -83,7 +86,7 @@
 
 .bd-tw-content {
     color: #363636;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.4;
     padding: 14px 20px 0px
 }
