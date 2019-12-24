@@ -36,6 +36,16 @@
     if (typeof (IcarusThemeSettings) !== 'undefined' &&
         typeof (IcarusThemeSettings.article) !== 'undefined' &&
         typeof (IcarusThemeSettings.article.highlight) !== 'undefined') {
+
+        $('figure.highlight').addClass('hljs');
+        $('figure.highlight .code .line span').each(function () {
+            const classes = $(this).attr('class').split(/\s+/);
+            if (classes.length === 1) {
+                $(this).addClass('hljs-' + classes[0]);
+                $(this).removeClass(classes[0]);
+            }
+        });
+
         if (typeof (ClipboardJS) !== 'undefined' && IcarusThemeSettings.article.highlight.clipboard) {
             $('figure.highlight').each(function () {
                 var id = 'code-' + Date.now() + (Math.random() * 1000 | 0);
@@ -92,5 +102,53 @@
         $toc.on('click', toggleToc);
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
+    }
+
+    // hexo-util/lib/is_external_link.js
+    function isExternalLink(input, sitehost, exclude) {
+        try {
+            sitehost = new URL(sitehost).hostname;
+        } catch (e) { }
+
+        if (!sitehost) return false;
+
+        // handle relative url
+        const data = new URL(input, 'http://' + sitehost);
+
+        // handle mailto: javascript: vbscript: and so on
+        if (data.origin === 'null') return false;
+
+        const host = data.hostname;
+
+        if (exclude) {
+            exclude = Array.isArray(exclude) ? exclude : [exclude];
+
+            if (exclude && exclude.length) {
+                for (const i of exclude) {
+                    if (host === i) return false;
+                }
+            }
+        }
+
+        if (host !== sitehost) return true;
+
+        return false;
+    }
+
+    if (typeof (IcarusThemeSettings) !== 'undefined' &&
+        typeof (IcarusThemeSettings.site.url) !== 'undefined' &&
+        typeof (IcarusThemeSettings.site.external_link) !== 'undefined' &&
+        IcarusThemeSettings.site.external_link.enable) {
+        $('.article .content a').filter(function (i, link) {
+            return link.href &&
+                !$(link).attr('href').startsWith('#') &&
+                link.classList.length === 0 &&
+                isExternalLink(link.href,
+                    IcarusThemeSettings.site.url,
+                    IcarusThemeSettings.site.external_link.exclude);
+        }).each(function (i, link) {
+            link.relList.add('noopener');
+            link.target = '_blank';
+        });
     }
 })(jQuery);

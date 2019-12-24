@@ -45,50 +45,34 @@
 
     
     
-    
-    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
-    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
 
     
     
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
 
     
     
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
 
-
     
     
     
     
-
 <link rel="stylesheet" href="/css/back-to-top.css">
 
-
-    
-    
-
     
     
     
     
-
     
     
-<link rel="stylesheet" href="/css/progressbar.css">
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
     
-    
-    
-        <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    
-
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 
 
@@ -125,12 +109,12 @@
             <div class="navbar-end">
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
                     <i class="fas fa-list-ul"></i>
                 </a>
                 
                 
-                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -142,11 +126,12 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
     
     <div class="card-image">
         <span  class="image is-7by1">
-        <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/Boycottangent/GitPic@master/img/20191204153846.jpg" alt="Botlog Wiki">
+            <img class="thumbnail" src="https://cdn.jsdelivr.net/gh/Boycottangent/GitPic@master/img/20191204153846.jpg" alt="Botlog Wiki">
         </span>
     </div>
     
@@ -154,14 +139,14 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-            Botlog Wiki
+                Botlog Wiki
             
         </h1>
         <div class="content">
             <p>这个博客使用icarus主题，这个主题的自定义程度非常高。botlog根据这一特性进行不少自定义，最大程度满足个性化的需求。同时，为了保证写作过程的规范性（强迫行为），botlog的文章结构布局和设置都具有一定程度可遵循的规则。</p>
-<h2 id="主题自定义"><a href="#主题自定义" class="headerlink" title="主题自定义"></a>主题自定义</h2><h3 id="调整页面布局"><a href="#调整页面布局" class="headerlink" title="调整页面布局"></a>调整页面布局</h3><p>在icarus的默认布局下，page和post都是3栏布局，中间为正文内容，左右两侧为widgets。考虑到post页面下，正文栏宽应当适当增大，保证视觉效果。参考主题issue<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/379#issuecomment-450512123" target="_blank" rel="noopener">#379</a>中的讨论，实现主页的index为3栏布局，post页面和page页面为2栏布局。</p>
+<h2 id="主题自定义"><a href="#主题自定义" class="headerlink" title="主题自定义"></a>主题自定义</h2><h3 id="调整页面布局"><a href="#调整页面布局" class="headerlink" title="调整页面布局"></a>调整页面布局</h3><p>在icarus的默认布局下，page和post都是3栏布局，中间为正文内容，左右两侧为widgets。考虑到post页面下，正文栏宽应当适当增大，保证视觉效果。参考主题issue<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/379#issuecomment-450512123">#379</a>中的讨论，实现主页的index为3栏布局，post页面和page页面为2栏布局。</p>
 <p>其中针对<code>/layout/layout.ejs</code>的修改我进行了如下调整：</p>
-<figure class="highlight javascript hljs"><figcaption><span>layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"columns"</span>&gt;</span><br><span class="line">    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"column &lt;%= main_column_class() %&gt; has-order-2 column-main"</span>&gt;<span class="hljs-xml"><span class="hljs-tag">&lt;<span class="hljs-name">%-</span> <span class="hljs-attr">body</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span><br><span class="line">        &lt;% <span class="hljs-keyword">if</span> (page.__page !== <span class="hljs-literal">true</span>) &#123; %&gt;</span><br><span class="line">            &lt;%- partial(<span class="hljs-string">'common/widget'</span>, &#123; <span class="hljs-attr">position</span>: <span class="hljs-string">'left'</span> &#125;) %&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">        &lt;% <span class="hljs-keyword">if</span> (page.__post !== <span class="hljs-literal">true</span>) &#123; %&gt;</span><br><span class="line">            &lt;%- partial(<span class="hljs-string">'common/widget'</span>, &#123; <span class="hljs-attr">position</span>: <span class="hljs-string">'right'</span> &#125;) %&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">&lt;<span class="hljs-regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"columns"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"column &lt;%= main_column_class() %&gt; has-order-2 column-main"</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">body</span> %&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">        &lt;% <span class="keyword">if</span> (page.__page !== <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">            &lt;%- partial(<span class="string">'common/widget'</span>, &#123; <span class="attr">position</span>: <span class="string">'left'</span> &#125;) %&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">        &lt;% <span class="keyword">if</span> (page.__post !== <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">            &lt;%- partial(<span class="string">'common/widget'</span>, &#123; <span class="attr">position</span>: <span class="string">'right'</span> &#125;) %&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>post页面2栏，widgets栏在左；page页面2栏，widgets栏在右。</p>
 <div class="columns is-multiline">
@@ -173,47 +158,47 @@
     </div>
 </div>
 
-<h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h3><p>icarus并没有提供置顶功能，但是参考<a href="https://susreal.com/article/2019/hexo-theme-icarus-2/" target="_blank" rel="noopener">这篇文章</a>可以实现置顶。写文章的时候在front-matter区域定义文章的权重（top），如果top的数值大于0，则将该文章置顶，并展示置顶标签。</p>
+<h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h3><p>icarus并没有提供置顶功能，但是参考<a href="https://susreal.com/article/2019/hexo-theme-icarus-2/">这篇文章</a>可以实现置顶。写文章的时候在front-matter区域定义文章的权重（top），如果top的数值大于0，则将该文章置顶，并展示置顶标签。</p>
 <p><strong>Step 1</strong>: 在hexo根目录的<code>_config.yml</code>中的<code>index_generator</code>字段里添加top属性。</p>
-<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">index_generator:</span></span><br><span class="line"><span class="hljs-attr">  path:</span> <span class="hljs-string">''</span></span><br><span class="line"><span class="hljs-attr">  per_page:</span> <span class="hljs-number">5</span></span><br><span class="line"><span class="hljs-attr">  order_by:</span> </span><br><span class="line"><span class="hljs-attr">      top:</span> <span class="hljs-bullet">-1</span></span><br><span class="line"><span class="hljs-attr">      date:</span> <span class="hljs-bullet">-1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">index_generator:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">5</span></span><br><span class="line"><span class="attr">  order_by:</span> </span><br><span class="line"><span class="attr">      top:</span> <span class="bullet">-1</span></span><br><span class="line"><span class="attr">      date:</span> <span class="bullet">-1</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>Step 2</strong>: 修改<code>generator.js</code>，在生成html代码时优先按照top排序。</p>
-<figure class="highlight javascript hljs"><figcaption><span>/⁨node_modules⁩/hexo-generator-index⁩/lib⁩/generator.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> paginationDir = config.pagination_dir || <span class="hljs-string">'page'</span>;</span><br><span class="line"><span class="hljs-comment">// added code</span></span><br><span class="line">posts.data = posts.data.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>&#123;</span><br><span class="line"><span class="hljs-keyword">if</span>(a.top &amp;&amp; b.top) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(a.top == b.top) <span class="hljs-keyword">return</span> b.date - a.date;</span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.top - a.top;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a.top &amp;&amp; !b.top) &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.date - a.date;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="hljs-comment">// end</span></span><br><span class="line"><span class="hljs-keyword">var</span> path = config.index_generator.path || <span class="hljs-string">''</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>/⁨node_modules⁩/hexo-generator-index⁩/lib⁩/generator.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">'page'</span>;</span><br><span class="line"><span class="comment">// added code</span></span><br><span class="line">posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123;</span><br><span class="line">    <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// end</span></span><br><span class="line"><span class="keyword">var</span> path = config.index_generator.path || <span class="string">''</span>;</span><br></pre></td></tr></table></figure>
 
 <p><strong>Step 3</strong>: 修改模版文件使top的默认值为0。</p>
-<figure class="highlight markdown hljs"><figcaption><span>/scaffolds/post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Botlog Wiki</span><br><span class="line">date: 1575129600000</span><br><span class="line">tags:</span><br><span class="line">top: 0</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><figcaption><span>/scaffolds/post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Botlog Wiki</span><br><span class="line">date: 1575129600000</span><br><span class="line">tags:</span><br><span class="line">top: 0</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p><strong>Step 4</strong>: 修改前段显示效果。</p>
-<figure class="highlight javascript hljs"><figcaption><span>/layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"level-left"</span>&gt;</span><br><span class="line"><span class="hljs-comment">//add code</span></span><br><span class="line">&lt;% <span class="hljs-keyword">if</span> (post.top) &#123; %&gt;</span><br><span class="line">&lt;i <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"fas fa-chevron-circle-up"</span> style=<span class="hljs-string">"color:#ff3860"</span>&gt;<span class="hljs-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span></span><br><span class="line">&lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"level-item"</span> style=<span class="hljs-string">"color:#ff3860"</span>&gt;&amp;nbsp;TOP&lt;<span class="hljs-regexp">/span&gt;</span></span><br><span class="line"><span class="hljs-regexp">&lt;% &#125; %&gt;</span></span><br><span class="line"><span class="hljs-regexp">/</span><span class="hljs-regexp">/end</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>/layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"level-left"</span>&gt;</span><br><span class="line"><span class="comment">//add code</span></span><br><span class="line">&lt;% <span class="keyword">if</span> (post.top) &#123; %&gt;</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fas fa-chevron-circle-up"</span> style=<span class="string">"color:#ff3860"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line">&lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">"level-item"</span> style=<span class="string">"color:#ff3860"</span>&gt;&amp;nbsp;TOP&lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">&lt;% &#125; %&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/end</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>DONE!</strong> 同时，因为top的属性被默认为0，因此可以根据此实现置顶多篇文章，只需要在文章的开头自定义top值。</p>
 <h3 id="Link-Widget"><a href="#Link-Widget" class="headerlink" title="Link Widget"></a>Link Widget</h3><p>默认的Links Widget不能自定义label，但是本身widget中显示的链接却可以自定义。实际上links widget完全可以发挥除了展示友联之外的作用，因此可以修改代码自定义widget的label。</p>
 <p><strong>Step 1</strong>: 修改link插件的代码。</p>
-<figure class="highlight diff hljs"><figcaption><span>/layout/widget/links.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    &lt;h3 class="menu-label"&gt;</span><br><span class="line"><span class="hljs-deletion">-       &lt;%= __('widget.links') %&gt;</span></span><br><span class="line"><span class="hljs-addition">+       &lt;%= get_config_from_obj(widget, 'label') %&gt;</span></span><br><span class="line">    &lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff"><figcaption><span>/layout/widget/links.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    &lt;h3 class="menu-label"&gt;</span><br><span class="line"><span class="deletion">-       &lt;%= __('widget.links') %&gt;</span></span><br><span class="line"><span class="addition">+       &lt;%= get_config_from_obj(widget, 'label') %&gt;</span></span><br><span class="line">    &lt;/h3&gt;</span><br></pre></td></tr></table></figure>
 
 <p><strong>Step 2</strong>: 在主题的配置文件中增加label属性。</p>
-<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-bullet">-</span></span><br><span class="line">    <span class="hljs-comment"># Widget name</span></span><br><span class="line"><span class="hljs-attr">    type:</span> <span class="hljs-string">links</span></span><br><span class="line">    <span class="hljs-comment"># Where should the widget be placed, left or right</span></span><br><span class="line"><span class="hljs-attr">    position:</span> <span class="hljs-string">left</span></span><br><span class="line">    <span class="hljs-comment"># Links to be shown in the links widget</span></span><br><span class="line"><span class="hljs-attr">    label:</span> <span class="hljs-string">链接</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span></span><br><span class="line">    <span class="comment"># Widget name</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">links</span></span><br><span class="line">    <span class="comment"># Where should the widget be placed, left or right</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">left</span></span><br><span class="line">    <span class="comment"># Links to be shown in the links widget</span></span><br><span class="line"><span class="attr">    label:</span> <span class="string">链接</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>DONE!</strong> 后续需要在post中自定义links中显示的链接时还可以进一步自定义label啦！比如在我的乐评文中就可以放上该专辑在各平台的链接。</p>
 <h3 id="Share-Widget"><a href="#Share-Widget" class="headerlink" title="Share Widget"></a>Share Widget</h3><p>share的按钮从文章部分中单独出来，并加上一句引导</p>
-<figure class="highlight diff hljs"><figcaption><span>/layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-addition">+    &lt;/div&gt;</span></span><br><span class="line"><span class="hljs-addition">+ &lt;/div&gt;</span></span><br><span class="line">      &lt;% if (!index &amp;&amp; has_config('share.type')) &#123; %&gt;</span><br><span class="line"><span class="hljs-addition">+         &lt;div class="card"&gt;</span></span><br><span class="line"><span class="hljs-addition">+             &lt;div class="card-content"&gt;&lt;h3 class="menu-label has-text-centered"&gt;Share this post if you like&lt;/h3&gt;</span></span><br><span class="line">              &lt;%- partial('share/' + get_config('share.type')) %&gt;</span><br><span class="line">              &lt;/div&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line"><span class="hljs-addition">+     &lt;% &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight diff"><figcaption><span>/layout/common/article.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+    &lt;/div&gt;</span></span><br><span class="line"><span class="addition">+ &lt;/div&gt;</span></span><br><span class="line">      &lt;% if (!index &amp;&amp; has_config('share.type')) &#123; %&gt;</span><br><span class="line"><span class="addition">+         &lt;div class="card"&gt;</span></span><br><span class="line"><span class="addition">+             &lt;div class="card-content"&gt;&lt;h3 class="menu-label has-text-centered"&gt;Share this post if you like&lt;/h3&gt;</span></span><br><span class="line">              &lt;%- partial('share/' + get_config('share.type')) %&gt;</span><br><span class="line">              &lt;/div&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line"><span class="addition">+     &lt;% &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="取消显示某一widget"><a href="#取消显示某一widget" class="headerlink" title="取消显示某一widget"></a>取消显示某一widget</h3><p>参考这个<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/379#issuecomment-450670279" target="_blank" rel="noopener">issue</a>，通过在特定widget的ejs文件中修改代码可以指定某个widget在page/post中的显示情况，但是这种方法的修改是全局的。</p>
+<h3 id="取消显示某一widget"><a href="#取消显示某一widget" class="headerlink" title="取消显示某一widget"></a>取消显示某一widget</h3><p>参考这个<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/379#issuecomment-450670279">issue</a>，通过在特定widget的ejs文件中修改代码可以指定某个widget在page/post中的显示情况，但是这种方法的修改是全局的。</p>
 <p>如果你取消了在post页中显示A widget，那么即使你在某篇post中自定义A widget，它也不会显示。所以我将多数情况下不希望显示的widget指定到另一侧。</p>
 <h2 id="Blog增强"><a href="#Blog增强" class="headerlink" title="Blog增强"></a>Blog增强</h2><p>除了修改主题源码之外，我还做了一些微小的工作。</p>
 <h3 id="Thumbnail-Credit"><a href="#Thumbnail-Credit" class="headerlink" title="Thumbnail Credit"></a>Thumbnail Credit</h3><p>Post的头图除了我自己制作的图片之外，还有一部分来源于其他网站或平台，如unsplash, twitter和instagram等。为了更好地呈现来源和引用致谢，我借鉴unsplash的做法生成了不同来源的credit badge，如本页面末尾的unsplash badge代码如下：</p>
-<figure class="highlight html hljs"><figcaption><span>unsplash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:black;color:white"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unsplash.com/photos/95YRwf6CNw8"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Download free do whatever you want high-resolution photos from Clément H"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"iconfont iconunsplash"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span>Clément H<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>unsplash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">"background-color:black;color:white"</span> <span class="attr">href</span>=<span class="string">"https://unsplash.com/photos/95YRwf6CNw8"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"noopener noreferrer"</span> <span class="attr">title</span>=<span class="string">"Download free do whatever you want high-resolution photos from Clément H"</span> <span class="attr">class</span>=<span class="string">"credit"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"iconfont iconunsplash"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span>Clément H<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>你可以自己修改这部分代码，配合来源网站的样式和风格，此处列举我常用的几种badge形式。</p>
 <div class="columns is-multiline">
 <div class="column is-one-third is-12-mobile">
-<figure class="highlight html hljs"><figcaption><span>twitter</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#f4f4f4;color:#00acee"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://twitter.com/shiori1012/status/1050152848099434496"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Check other tweets by Iwakura Shiori"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fab fa-twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span>岩倉しおり<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>twitter</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">"background-color:#f4f4f4;color:#00acee"</span> <span class="attr">href</span>=<span class="string">"https://twitter.com/shiori1012/status/1050152848099434496"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"noopener noreferrer"</span> <span class="attr">title</span>=<span class="string">"Check other tweets by Iwakura Shiori"</span> <span class="attr">class</span>=<span class="string">"credit"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fab fa-twitter"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span>岩倉しおり<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </div>
 <div class="column is-one-third is-12-mobile">
-<figure class="highlight html hljs"><figcaption><span>instagram</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: linear-gradient(45deg, #f09433, #bc1888);color:white"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.instagram.com/p/Bok1VAygMZ2/?igshid=h4t69dzw3d4w"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Find out more photos from nishimakitaichi in instagram"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fab fa-instagram"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span>西槇太一<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>instagram</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">"background-image: linear-gradient(45deg, #f09433, #bc1888);color:white"</span> <span class="attr">href</span>=<span class="string">"https://www.instagram.com/p/Bok1VAygMZ2/?igshid=h4t69dzw3d4w"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"noopener noreferrer"</span> <span class="attr">title</span>=<span class="string">"Find out more photos from nishimakitaichi in instagram"</span> <span class="attr">class</span>=<span class="string">"credit"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fab fa-instagram"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span>西槇太一<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </div>
 <div class="column is-one-third is-12-mobile">
-<figure class="highlight html hljs"><figcaption><span>pixiv</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#009cff;color:white"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.pixiv.net/en/artworks/68157542"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener noreferrer"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Check more illustrations by tanenbo_000 in pixiv"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"iconfont iconpixiv"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size:12ps"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"credit-mark"</span>&gt;</span>たねんぼ<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>pixiv</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">"background-color:#009cff;color:white"</span> <span class="attr">href</span>=<span class="string">"https://www.pixiv.net/en/artworks/68157542"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"noopener noreferrer"</span> <span class="attr">title</span>=<span class="string">"Check more illustrations by tanenbo_000 in pixiv"</span> <span class="attr">class</span>=<span class="string">"credit"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"iconfont iconpixiv"</span> <span class="attr">style</span>=<span class="string">"font-size:12ps"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"credit-mark"</span>&gt;</span>たねんぼ<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </div>
 </div>
 
@@ -232,9 +217,8 @@
 
 
 
-            
 
-            </div>
+</div>
                 
                 
                 
@@ -245,13 +229,14 @@
 <div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
     
         
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                目录
-            </h3>
-            <ul class="menu-list"><li>
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
         <a class="is-flex" href="#主题自定义">
         <span class="has-mr-6">1</span>
         <span>主题自定义</span>
@@ -288,9 +273,9 @@
         <span class="has-mr-6">2.2</span>
         <span>Jsdelivr 加速图片访问</span>
         </a></li></ul></li></ul>
+            </div>
         </div>
     </div>
-</div>
 
     
         
@@ -300,10 +285,9 @@
             <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <figure class="image is-128x128 has-mb-6">
-                            <img class="is-rounded" src="/images/avatar.jpg" alt="杯葛">
-                        </figure>
-                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="is-rounded" src="/images/avatar.jpg" alt="杯葛">
+                    </figure>
                     
                     <p class="is-size-4 is-block">
                         杯葛
@@ -329,9 +313,11 @@
                     <p class="heading">
                         文章
                     </p>
-                    <p class="title has-text-weight-normal">
-                        17
-                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            17
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -339,9 +325,11 @@
                     <p class="heading">
                         分类
                     </p>
-                    <p class="title has-text-weight-normal">
-                        6
-                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            6
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -349,16 +337,20 @@
                     <p class="heading">
                         标签
                     </p>
-                    <p class="title has-text-weight-normal">
-                        20
-                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            20
+                        </p>
+                    </a>
                 </div>
             </div>
         </nav>
+        
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://t.me/joinchat/AAAAAE6BmYMIzVmVkE-eOQ" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://t.me/joinchat/AAAAAE6BmYMIzVmVkE-eOQ" target="_blank" rel="noopener">
                 关注我</a>
         </div>
+        
         
         
     </div>
@@ -444,8 +436,8 @@
                 </a>
                 <p class="is-size-7">
                 &copy; 2019 haikuzu&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
-                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 
                 <br>
                 <span id="busuanzi_container_site_uv">
@@ -458,9 +450,8 @@
             
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                 
-                
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
                         
                         <i class="fab fa-creative-commons"></i>
                         
@@ -468,7 +459,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
                         
                         <i class="fab fa-creative-commons-by"></i>
                         
@@ -476,7 +467,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Github Repository" href="https://github.com/Boycottangent/boycottangent.github.io">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Github Repository" href="https://github.com/Boycottangent/boycottangent.github.io">
                         
                         <i class="fas fa-code-branch"></i>
                         
@@ -493,8 +484,13 @@
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
 <script>moment.locale("zh-CN");</script>
 
+
 <script>
 var IcarusThemeSettings = {
+    site: {
+        url: 'https://boycottangent.github.io',
+        external_link: {"enable":true,"exclude":[]}
+    },
     article: {
         highlight: {
             clipboard: true,
@@ -505,30 +501,25 @@ var IcarusThemeSettings = {
 </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
 
 
 
-    
-    
-    
-    <script src="/js/animation.js"></script>
-    
 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
-    <script src="/js/gallery.js" defer></script>
-    
 
-    
-    
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
-    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
             my browser now </a></p>
     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
 </div>
@@ -544,32 +535,25 @@ var IcarusThemeSettings = {
 </script>
 
 
-    
-    
-    
-    
 
-<a id="back-to-top" title="回到顶端" href="javascript:;" target="_blank" rel="noopener">
+
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
 
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
 
-    
+
+
+
+
+
+
+
 
 
 <script src="/js/main.js" defer></script>
